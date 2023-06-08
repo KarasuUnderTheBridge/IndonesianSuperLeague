@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Indonesian Super League</string>
+    <string name="input_skor">Input Skor</string>
+    <string name="input_data_klub">Input Data Klub</string>
+    <string name="klasemen">Klasemen</string>
+    <string name="menu_utama">Menu Utama</string>
+    <string name="nama_klub">Nama Klub</string>
+    <string name="kota_klub">Kota Klub</string>
+    <string name="simpan">Simpan</string>
+    <string name="input_skor_pertandingan">Input Skor Pertandingan</string>
+</resources>

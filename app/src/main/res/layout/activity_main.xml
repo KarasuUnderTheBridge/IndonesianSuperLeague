@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_utama"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        />
+
+    <Button
+        android:id="@+id/input_klub_btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="75dp"
+        android:text="@string/input_data_klub"
+        android:layout_centerHorizontal="true"
+        android:background="@color/design_default_color_on_primary"/>
+
+    <Button
+        android:id="@+id/input_skor_btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/input_klub_btn"
+        android:layout_marginTop="25dp"
+        android:text="@string/input_skor"
+        android:layout_centerHorizontal="true"
+        android:background="@color/design_default_color_on_primary"/>
+
+    <Button
+        android:id="@+id/klasemen_btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/input_skor_btn"
+        android:layout_marginTop="25dp"
+        android:text="@string/klasemen"
+        android:layout_centerHorizontal="true"
+        android:background="@color/design_default_color_on_primary"/>
+</RelativeLayout>

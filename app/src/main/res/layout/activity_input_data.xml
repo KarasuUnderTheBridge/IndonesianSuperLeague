@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputDataActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_utama"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        />
+
+    <EditText
+        android:id="@+id/nama_klub_edit"
+        android:layout_below="@id/title"
+        android:layout_marginTop="75dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:hint="@string/nama_klub"/>
+
+    <EditText
+        android:id="@+id/asal_klub_edit"
+        android:layout_below="@id/nama_klub_edit"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:hint="@string/kota_klub"/>
+
+    <Button
+        android:id="@+id/simpan_btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/asal_klub_edit"
+        android:layout_marginTop="25dp"
+        android:text="@string/simpan"
+        android:layout_centerHorizontal="true"
+        android:background="@color/design_default_color_on_primary"/>
+
+</RelativeLayout>

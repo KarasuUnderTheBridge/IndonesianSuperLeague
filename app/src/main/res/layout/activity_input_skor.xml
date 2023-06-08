@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputSkorActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_skor_pertandingan"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_below="@id/title"
+        android:layout_marginTop="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/layout_tambah_kurang"
+        android:layout_below="@id/recycler_view"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/tambah_btn"
+            android:layout_width="50dp"
+            android:text="+"
+            android:textColor="@color/white"
+            android:layout_height="50dp"/>
+        <Button
+            android:id="@+id/kurang_btn"
+            android:layout_width="50dp"
+            android:layout_marginStart="10dp"
+            android:text="-"
+            android:textColor="@color/white"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/simpan_btn"
+        android:layout_below="@id/layout_tambah_kurang"
+        android:layout_centerHorizontal="true"
+        android:layout_width="120dp"
+        android:text="@string/simpan"
+        android:textColor="@color/white"
+        android:layout_height="50dp"/>
+</RelativeLayout>
